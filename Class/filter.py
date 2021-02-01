@@ -1,0 +1,5 @@
+a = filter(lambda i : i%2==0, range(1,20))
+List = list(a)
+print(List)
+b = map(lambda i : i*i, List)
+print(list(b))
