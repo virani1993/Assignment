@@ -1,0 +1,134 @@
+1. _
+while True:
+    try:
+        x = int(input("Please enter a number: "))
+        break
+    except Error:
+        print("Try again...")
+
+2. _????
+
+
+
+3. _
+a = input("Enter your birth year :")
+l = len(a)
+try:
+    assert (l<=4)
+    print("You are old")
+except:
+    print("The length is too short/long !!! Please provide only four digitsÓ)
+
+4. _
+username = input("Please enter your username : ")
+password = input("Please enter your password : ")
+re_password = input("Please enter your password again : ")
+
+if(password != re_password):
+    c=1
+    while c<3:
+        re_password = input("Please enter your password again : ")
+        c+=1
+        if(password == re_password):
+            break
+        
+else:
+    print("your are Login in.")
+
+5. Finally, always execute. Raise we can use when we see error in try block.
+
+6. _
+
+	with open("test.txt", "r") as f:
+    		for raw in f.readlines():
+       		 if len(raw)%2==0:
+            			print(raw,len(raw))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Task 6
+
+1. _
+test_str = input("Enter Your String : ")
+print("Your String is >>> ", str(test_str))
+
+char = [char for char in test_str if char.isupper()]
+print(char)
+
+2. _
+students = ['Smit', 'Jaya', 'Rayyan'] 
+subjects = ['CSE', 'Networking', 'Operating System']
+
+Dict = dict(zip(students,subjects))
+print(type(Dict))
+print(Dict)
+
+3. _
+def fibo():
+    a,b = 0,1
+    while True:
+        yield b
+        a,b = b , a+b
+
+f = fibo()
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+
+
+4. _
+def gen():
+    n =1
+    Str = input("Enter your String : ")
+    yield Str
+    n+=1
+
+for item in gen():
+    print(item)
+
+5. _
+def Dec1():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    c = a+b
+    print("Answer is ", c)
+def func(fun):
+    fun()
+func(Dec1)
+
+
+
+
+
+
+
