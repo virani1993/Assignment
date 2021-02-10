@@ -6,7 +6,11 @@ while True:
     except Error:
         print("Try again...")
 
-2. _????
+2. def add(*a):
+    print(sum(a))
+add(1)
+add(1,2,3)
+add(*[1,2,3],*(3,4,5))
 
 
 
